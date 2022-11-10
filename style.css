@@ -1,0 +1,106 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.svgIc {
+        height: 32px;
+        width: 108px;
+}
+svg path {
+    fill: #e50914;
+}
+
+.text {
+    text-transform: uppercase;
+}
+.navBtn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.openBtn {
+    position: fixed;
+    top:10px;
+    left:10px;
+    transform: rotate(90deg);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: .3s ease-in-out;
+}
+
+.nav.visible {
+    transform: translateX(0);
+}
+
+.navBlack {
+    background-color: rgb(34, 31, 31);
+    width: 60%;
+    max-width: 480px;
+    min-width: 320px;
+    transition-delay: .32s;
+}
+.navBlack.visible {
+    transition-delay: 0s;
+}
+.navRed {
+    background-color: rgb(229, 9, 20);
+    width: 95%;
+    transition-delay: .16s;  
+}
+.navRed.visible {
+    transition-delay: .16s;
+}
+.navWhite {
+    background-color: #fff;
+    width: 93%;
+    position: relative;
+    padding: 40px;
+    transition-delay: 0s;
+}
+.navWhite.visible {
+    transition-delay: .32s;
+}
+.closeBtn {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    opacity: .3;
+    transform: rotate(45deg);
+}
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin: 20px 0;
+
+}
+.list li a {
+    color: rgb(34, 31, 31);
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.list ul li {
+    list-style: none;
+    padding-left: 20px;
+}
